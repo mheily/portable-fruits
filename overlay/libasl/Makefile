@@ -1,4 +1,13 @@
-CFLAGS=-I../xnu-2782.20.48/EXTERNAL_HEADERS -I.
+CFLAGS=-I../include -I../xnu-2782.20.48/EXTERNAL_HEADERS -I.
+
+# Ignore some headers
+CFLAGS+=-D_MACH_INTERFACE_H_
+
+# for __mbstate_t
+CFLAGS+=-include wchar.h
+
+# for 'bool'
+CFLAGS+=-include stdbool.h
 
 #TODO: use mig to generate asl_ipcUser.c
 

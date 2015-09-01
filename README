@@ -1,6 +1,37 @@
+This project is an attempt to bring the fruits of a certain Unix(TM)
+vendor to other Unix-like operating systems.
+
+So far, these include:
+ * asld - an advanced syslog(3) replacement
+ * notifyd - a notification system
+ * Mach ports - an IPC mechanism
+ * launchd - an init(8) replacement and general program lanching thingy
+
 All tarballs are from the upstream project release 10.10.3 at
 
     http://opensource.apple.com/release/os-x-10103/
 
-Other requirements:
+Requirements to build:
 * libuuid-dev
+
+Status
+======
+
+Everything is mostly(?) terrible. It mostly does not compile on Debian Linux,
+and certainly will not link. Do not even think about using this for anything
+serious.
+
+See Also
+========
+
+* OpenGCD (a portable libdispatch implementation)
+https://github.com/mheily/opengcd
+
+* the NextBSD project
+http://www.nextbsd.org/
+
+* libasl manpage
+https://developer.apple.com/library/ios/documentation/System/Conceptual/ManPages_iPhoneOS/man3/asl_open.3.html
+
+* libnotify manpage
+https://developer.apple.com/library/prerelease/mac/documentation/Darwin/Reference/ManPages/man3/notify.3.html
