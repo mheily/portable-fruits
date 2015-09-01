@@ -1,0 +1,6 @@
+All tarballs are from the upstream project release 10.10.3 at
+
+    http://opensource.apple.com/release/os-x-10103/
+
+Other requirements:
+* libuuid-dev
