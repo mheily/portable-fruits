@@ -11,8 +11,10 @@ All tarballs are from the upstream project release 10.10.3 at
 
     http://opensource.apple.com/release/os-x-10103/
 
-Requirements to build:
+Requirements to build on Debian:
+* clang
 * libuuid-dev
+* libdispatch-dev
 
 Status
 ======

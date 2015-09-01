@@ -27,6 +27,12 @@ merge:
 	mkdir -p build/include/i386
 	cp build/xnu-2782.20.48/bsd/i386/_types.h build/include/i386
 	#
+	mkdir -p build/include/servers
+	cp $(nextbsd)/include/servers/bootstrap.h build/include/servers
+	#
+	mkdir -p build/include/liblaunch
+	cp -R $(nextbsd)/lib/liblaunch/bootstrap_priv.h build/include/liblaunch
+    #
 	cp build/Libnotify-133.1.1/notify.h build/include
 	#
 	rsync -a ./build/xnu-2782.20.48/osfmk/mach/ build/include/mach/

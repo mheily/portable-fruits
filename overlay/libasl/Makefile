@@ -9,6 +9,9 @@ CFLAGS+=-include wchar.h
 # for 'bool'
 CFLAGS+=-include stdbool.h
 
+# for 'bootstrap_priv.h', not sure if this is a good idea
+CFLAGS+=-I../include/liblaunch
+
 #TODO: use mig to generate asl_ipcUser.c
 
 libasl.a:
